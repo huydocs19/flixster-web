@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixster</title>
+    <link href="/style.css" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark text-white">
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+      <div id="movie-popup" class="modal-content">        
+        <button id="movie-popup-close" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>       
+        <div id="movie-popup-body" class="modal-body">
+          <img class="backdrop-poster">
+          <p class="movie-info"></p>
+          <p class="movie-overview"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="trailer-popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="trailerPopupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">         
+      <div id="trailer-content" class="modal-content">
+        <button id="trailer-popup-close" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>   
+        <div id="trailer-popup-body" class="modal-body">
+          <iframe class="movie-trailer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+    <h1><i class="fa-solid fa-film" style="color:#f3c221"></i> Flixster</h1> 
+    <div id="movie-list-type-area" >     
+      <button class="movie-list-type btn btn-primary shadow-none" value="popular" type="button">Popular</button>
+      <button class="movie-list-type btn btn btn-success shadow-none" value="now_playing" type="button">Now Playing</button>
+      <button class="movie-list-type btn btn-warning shadow-none" value="upcoming" type="button">Upcoming</button>
+      <button class="movie-list-type btn btn-info shadow-none" value="top_rated" type="button">Top Rated</button>
+  </div>       
+    <form id="search-form" class="form-inline">
+      <input id="search-item" class="form-control" type="text" placeholder="Enter a search item" aria-label="Enter a seach item" required>
+      <button class="btn btn-primary shadow-none" type="submit">Search</button>
+      <button id="clear-button" class="btn btn-danger shadow-none" type="reset">Clear</button>
+    </form>
+    
+    <h2 class="movie-list-title">Popular</h2>
+    <div class="movie-area"></div>
+    <div>
+        <button id="load-more" class="btn btn btn-outline-info" type="submit">Load more movies</button>
+    </div>  
+    <script type='text/javascript' src='/config.js'></script>
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
