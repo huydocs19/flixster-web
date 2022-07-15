@@ -4,8 +4,6 @@ Flixster is a website that allows users to browse movies from the [The Movie Dat
 
 ### Application Features
 
-#### CORE FEATURES
-
 - User can view a list of movies (title, poster image, and votes) from The Movie Database API as a grid view 
 - User can load more current movies by clicking a button at the bottom of the list  
 - Allow users to search for movies and display them in a grid view 
