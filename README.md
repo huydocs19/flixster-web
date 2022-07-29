@@ -12,9 +12,11 @@ Flixster is a website that allows users to browse movies from the [The Movie Dat
 
 ### Walkthrough Video
 
-<img src="walkthrough1.gif" width=1000><br>
-<img src="walkthrough2.gif" width=1000><br>
-<img src="walkthrough3.gif" width=1000><br>
+<img src="walkthrough1.gif" width=800><br>
+<img src="walkthrough2.gif" width=800><br>
+<img src="walkthrough3.gif" width=800><br>
+
+### Tech Stack Used: HTML, CSS, JavaScript
 
 ### Open-source libraries used
 
